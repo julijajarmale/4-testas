@@ -74,15 +74,18 @@ const b2 = document.querySelector('#b2')
 const input1 = document.querySelector('input')
 const input2 = document.querySelector('input + input')
 let inputSum = 0;
-const input1Value = input1.setAttribute('input1','value');
-const input2Value = input2.setAttribute('input2','value');
-   
 
 b1.addEventListener('click', () => {
-inputSum = input1Value + input2Value
+inputSum = Number(input1.value) + Number(input2.value)
 
 console.log(inputSum)
 });
+
+b2.addEventListener('click', () => {
+inputSum = Number(input1.value) - Number(input2.value)
+    
+console.log(inputSum)
+    });
 
 //5. Tiesiogiai HTML faile rankiniu būdu sukurkite <ul> tagą. (2 taškai)
 //a. JS pagalba perskaitykite masyvą australia ir kiekvieną masyvo elementą įrašykite į strigą su <li> 
