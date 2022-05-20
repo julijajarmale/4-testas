@@ -1,4 +1,3 @@
-const africa = ['Zebras', 'Liūtas',  '', 'Raganosis', '','Raganosis', 'Begemotas'];
 const australia = ['Kengūra', 'Ančiasnapis', 'Dingo', 'Atsirado', 'Strutis'];
 
 function rand(min, max) {
@@ -60,7 +59,23 @@ button2.addEventListener('click', () => {
 //b. Naudodami createElement() ir kitus reikalingus metodus sukurkite kiekvienam masyvo elementui po <li> 
 //tagą su elemento stringu viduje ir juos įrašykite į <ul> tago vidų. (5 taškai)
 //c. Elementus su tuščiais stringais praleiskite ir jiems <li> elementų nekurkite. (4 taškai)
+
+const africa = ['Zebras', 'Liūtas',  '', 'Raganosis', '','Raganosis', 'Begemotas'];
 const ul = document.querySelector('ul')
+
+for(let i = 0; i < africa.length; i++){
+    console.log(africa[i])
+    if(africa[i] != ''){
+    const li = document.createElement('li')
+    li.innerText = africa[i];
+    ul.appendChild(li)
+    
+   
+    }
+}
+
+console.log(ul)
+
 
 
 //4. Tiesiogiai HTML faile rankiniu būdu sukurkite du tuščius input laukelius, vieną <h5> tagą ir du mygtukus: “+” 
