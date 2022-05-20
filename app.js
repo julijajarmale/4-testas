@@ -1,5 +1,3 @@
-const australia = ['Kengūra', 'Ančiasnapis', 'Dingo', 'Atsirado', 'Strutis'];
-
 function rand(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -37,7 +35,7 @@ const button = document.querySelector('button');
 //b. <h3> tage skaičiuokite ir su innerText() metodu rašykite visų sugeneruotų skaičių sumą. (4 taškai)
 
 const skaiciai = [];
-const h3 = document.querySelector('h3')
+const h3 = document.querySelector('h3');
 let skaiciuSuma = 0;
 let skaicius = 0;
 const button2 = document.querySelector('#button2');
@@ -61,7 +59,7 @@ button2.addEventListener('click', () => {
 //c. Elementus su tuščiais stringais praleiskite ir jiems <li> elementų nekurkite. (4 taškai)
 
 const africa = ['Zebras', 'Liūtas',  '', 'Raganosis', '','Raganosis', 'Begemotas'];
-const ul = document.querySelector('ul')
+const ul = document.querySelector('ul');
 
 for(let i = 0; i < africa.length; i++){
     console.log(africa[i])
@@ -76,35 +74,39 @@ for(let i = 0; i < africa.length; i++){
 
 console.log(ul)
 
-
-
 //4. Tiesiogiai HTML faile rankiniu būdu sukurkite du tuščius input laukelius, vieną <h5> tagą ir du mygtukus: “+” 
 //ir “-”. (2 taškai)
 //a. Suprogramuokite kalkuliatorių taip, kad įrašius skaičius į abu input laukelius ir paspaudus atitinkamą mygtuką
 // su skaičiais būtų atlikta atitinkama aritmetinė operacija. (10 taškai)
 //b. Jos rezultatas būtų atvaizduotas <h5> tage. (3 taškai)
 //Pasirinkite patys sau patogiausius metodus tai atlikti.
-const b1 = document.querySelector('#b1')
-const b2 = document.querySelector('#b2')
-const input1 = document.querySelector('input')
-const input2 = document.querySelector('input + input')
+const b1 = document.querySelector('#b1');
+const b2 = document.querySelector('#b2');
+const input1 = document.querySelector('input');
+const input2 = document.querySelector('input + input');
+const h5 = document.querySelector('h5');
 let inputSum = 0;
 
 b1.addEventListener('click', () => {
 inputSum = Number(input1.value) + Number(input2.value)
+h5.innerText = inputSum
 
 console.log(inputSum)
 });
 
 b2.addEventListener('click', () => {
 inputSum = Number(input1.value) - Number(input2.value)
+h5.innerText = inputSum
     
 console.log(inputSum)
     });
+
+    
 
 //5. Tiesiogiai HTML faile rankiniu būdu sukurkite <ul> tagą. (2 taškai)
 //a. JS pagalba perskaitykite masyvą australia ir kiekvieną masyvo elementą įrašykite į strigą su <li> 
 //tagais iš abiejų pusių, o visus gautus stringus sudėkite į vieną bendrą stringą. (8 taškai)
 //b. Tą stringą naudodami innerHTML() metodą įdėkite į <ul> tago vidų. (5 taškai)
 //c. Generavimo metu “Dingo” background’ą nuspalvinkite mėlynai. (5 taškai)
-//
+
+const australia = ['Kengūra', 'Ančiasnapis', 'Dingo', 'Atsirado', 'Strutis'];
