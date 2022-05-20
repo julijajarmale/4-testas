@@ -110,3 +110,18 @@ console.log(inputSum)
 //c. Generavimo metu “Dingo” background’ą nuspalvinkite mėlynai. (5 taškai)
 
 const australia = ['Kengūra', 'Ančiasnapis', 'Dingo', 'Atsirado', 'Strutis'];
+const ul2 = document.querySelector('#ul2')
+let liHTML = ''
+let li2 = document.querySelectorAll('li')
+
+for (let i = 0; i < australia.length; i++){
+    console.log(australia[i])
+    let liHTML = `<li>${australia[i]}</li>`
+
+    if(australia[i] === 'Dingo'){
+        liHTML = `<li style = background-color: blue>${australia[i]}</li>`
+
+    }
+    li2.innerHTML = liHTML;
+    
+
