@@ -25,7 +25,7 @@ const button = document.querySelector('button');
         h2.style.color = 'red';
         h22.style.color = 'red';
     } else{
-        h2.style.color = 'black';
+        h2.style.color = 'black'; 
         h22.style.color = 'black';
     }
 });
