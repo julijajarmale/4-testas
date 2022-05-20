@@ -124,4 +124,4 @@ for (let i = 0; i < australia.length; i++){
     }
     li2.innerHTML = liHTML;
     
-
+}
