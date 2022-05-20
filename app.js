@@ -42,7 +42,6 @@ const h3 = document.querySelector('h3')
 let skaiciuSuma = 0;
 let skaicius = 0;
 const button2 = document.querySelector('#button2');
-console.log(button2)
 
 button2.addEventListener('click', () => {
     let skaicius = rand(1,10);
@@ -61,6 +60,8 @@ button2.addEventListener('click', () => {
 //b. Naudodami createElement() ir kitus reikalingus metodus sukurkite kiekvienam masyvo elementui po <li> 
 //tagą su elemento stringu viduje ir juos įrašykite į <ul> tago vidų. (5 taškai)
 //c. Elementus su tuščiais stringais praleiskite ir jiems <li> elementų nekurkite. (4 taškai)
+const ul = document.querySelector('ul')
+
 
 //4. Tiesiogiai HTML faile rankiniu būdu sukurkite du tuščius input laukelius, vieną <h5> tagą ir du mygtukus: “+” 
 //ir “-”. (2 taškai)
@@ -68,6 +69,20 @@ button2.addEventListener('click', () => {
 // su skaičiais būtų atlikta atitinkama aritmetinė operacija. (10 taškai)
 //b. Jos rezultatas būtų atvaizduotas <h5> tage. (3 taškai)
 //Pasirinkite patys sau patogiausius metodus tai atlikti.
+const b1 = document.querySelector('#b1')
+const b2 = document.querySelector('#b2')
+const input1 = document.querySelector('input')
+const input2 = document.querySelector('input + input')
+let inputSum = 0;
+const input1Value = input1.setAttribute('input1','value');
+const input2Value = input2.setAttribute('input2','value');
+   
+
+b1.addEventListener('click', () => {
+inputSum = input1Value + input2Value
+
+console.log(inputSum)
+});
 
 //5. Tiesiogiai HTML faile rankiniu būdu sukurkite <ul> tagą. (2 taškai)
 //a. JS pagalba perskaitykite masyvą australia ir kiekvieną masyvo elementą įrašykite į strigą su <li> 
